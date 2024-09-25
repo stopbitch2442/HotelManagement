@@ -10,6 +10,6 @@ public class Booking
     [Required] public DateTime CheckInDate { get; set; } // Дата заезда
     [Required] public DateTime CheckOutDate { get; set; } // Дата выезда
 
-    public Guest Guest { get; set; } // Связь с гостем
-    public Room Room { get; set; } // Связь с номером 
 }
+
+

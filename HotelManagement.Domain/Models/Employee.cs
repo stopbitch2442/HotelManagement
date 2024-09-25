@@ -15,5 +15,4 @@ public class Employee
     [Required] public decimal Salary { get; set; } // Зарплата работника
 
     public int HotelId { get; set; } // Идентификатор отеля, в котором работает работник
-    public Hotel Hotel { get; set; } // Связь с отелем
 }

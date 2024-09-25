@@ -10,5 +10,5 @@ public class Guest
     [Required] [MaxLength(100)] public string Email { get; set; } // Электронная почта гостя
     [Phone] public string PhoneNumber { get; set; } // Номер телефона гостя
 
-    public ICollection<Booking> Bookings { get; set; } // Связь с бронированиями (если у вас есть такая модель)
+    public virtual ICollection<Booking> Bookings { get; set; } // Связь с бронированиями (если у вас есть такая модель)
 }

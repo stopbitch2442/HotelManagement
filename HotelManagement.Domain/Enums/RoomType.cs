@@ -1,10 +1,22 @@
-﻿namespace HotelManagement.Domain;
+﻿using System.ComponentModel.DataAnnotations;
 
-public enum RoomType
+namespace HotelManagement.Domain
 {
-    Single,
-    Double,
-    Suite,
-    Deluxe,
-    Family
+    public enum RoomType
+    {
+        [Display(Name = "Single")]
+        Single,
+        
+        [Display(Name = "Double")]
+        Double,
+        
+        [Display(Name = "Suite")]
+        Suite,
+        
+        [Display(Name = "Deluxe")]
+        Deluxe,
+        
+        [Display(Name = "Family")]
+        Family
+    }
 }
